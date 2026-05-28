@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ma Santé entre mes Mains — Guide Santé Familiale Afrique 2026</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJQCEGS8SH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SJQCEGS8SH');
+</script>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','806580201822678');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=806580201822678&ev=PageView&noscript=1"/></noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+
+<style>
+:root {
+  --b:   #1A6B9A;
+  --bc:  #2E8EC0;
+  --bp:  #E8F4FB;
+  --g:   #1A7A4A;
+  --gc:  #2E9E60;
+  --gp:  #E8F5EE;
+  --or:  #D4900A;
+  --orc: #F0B429;
+  --orp: #FEF3DC;
+  --r:   #C0392B;
+  --rp:  #FDEDEC;
+  --v:   #7D3C98;
+  --n:   #0F1A2E;
+  --gr:  #6B7A8A;
+  --bg:  #F7F9FC;
+  --w:   #FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--n);overflow-x:hidden;}
+
+/* TOPBAR */
+.topbar{background:var(--r);padding:10px 20px;text-align:center;font-size:13px;
+  font-weight:600;color:rgba(255,255,255,.9);position:sticky;top:0;z-index:200;
+  display:flex;align-items:center;justify-content:center;gap:8px;}
+.topbar .dot{width:8px;height:8px;background:#fff;border-radius:50%;
+  animation:blink 1.5s infinite;flex-shrink:0;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.topbar strong{color:var(--orc);}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#0a1628 0%,#0d2040 60%,#0a1628 100%);
+  padding:72px 20px 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 15% 85%,rgba(26,107,154,.55) 0%,transparent 50%),
+             radial-gradient(ellipse at 85% 15%,rgba(26,122,74,.2) 0%,transparent 50%);
+  pointer-events:none;}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;
+  grid-template-columns:1fr 420px;gap:52px;align-items:center;position:relative;z-index:1;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;
+  background:rgba(212,144,10,.12);border:1px solid rgba(212,144,10,.35);
+  border-radius:100px;padding:6px 16px;font-size:11px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;color:var(--orc);margin-bottom:22px;}
+.hero-title{font-family:'Playfair Display',serif;
+  font-size:clamp(26px,3.8vw,52px);font-weight:900;color:#fff;
+  line-height:1.15;margin-bottom:18px;}
+.hero-title em{font-style:italic;color:var(--orc);}
+.hero-title .red{color:#FF6B6B;}
+.hero-sub{font-size:clamp(15px,1.6vw,17px);color:rgba(255,255,255,.65);
+  line-height:1.8;margin-bottom:30px;}
+.hero-sub strong{color:rgba(255,255,255,.9);}
+.hero-proof{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px;}
+.hp{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.6);}
+.hp-tick{width:18px;height:18px;background:rgba(26,122,74,.3);
+  border:1px solid var(--g);border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:9px;color:#6ED48A;flex-shrink:0;}
+.hero-ctas{display:flex;flex-direction:column;gap:11px;}
+.btn-main{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  background:linear-gradient(135deg,var(--or),var(--orc),var(--or));
+  background-size:200% auto;color:var(--n);font-family:'Plus Jakarta Sans',sans-serif;
+  font-weight:800;font-size:16px;padding:19px 42px;border-radius:12px;border:none;
+  cursor:pointer;text-decoration:none;transition:all .3s;
+  box-shadow:0 8px 30px rgba(212,144,10,.4);width:fit-content;
+  position:relative;overflow:hidden;animation:shine 3s linear infinite;}
+.btn-main::before{content:'';position:absolute;top:-50%;left:-60%;width:40%;height:200%;
+  background:rgba(255,255,255,.22);transform:skewX(-20deg);
+  animation:shimmer 3s ease infinite;}
+@keyframes shimmer{0%{left:-60%;opacity:0}20%{opacity:1}40%{left:130%;opacity:0}100%{left:130%;opacity:0}}
+@keyframes shine{0%{background-position:0 center}100%{background-position:200% center}}
+.btn-main:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 16px 46px rgba(212,144,10,.55);}
+.btn-ghost{display:inline-flex;align-items:center;gap:7px;color:rgba(255,255,255,.5);
+  font-size:14px;font-weight:600;text-decoration:none;transition:all .3s;
+  width:fit-content;padding:9px 18px;border-radius:8px;
+  border:1px solid rgba(255,255,255,.14);}
+.btn-ghost:hover{color:var(--orc);border-color:rgba(240,168,32,.35);background:rgba(240,168,32,.05);}
+.hero-note{font-size:12px;color:rgba(255,255,255,.28);
+  display:flex;align-items:center;gap:5px;margin-top:5px;}
+
+/* MOCKUP GUIDE */
+.guide-mockup{position:relative;}
+.guide-cover{background:linear-gradient(155deg,#1A6B9A 0%,#0d2040 100%);
+  border-radius:6px 18px 18px 6px;padding:30px 26px;
+  box-shadow:-8px 10px 0 rgba(0,0,0,.45),0 32px 80px rgba(0,0,0,.55),
+             inset 4px 0 0 rgba(255,255,255,.03);
+  position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column;}
+.guide-cover::before{content:'';position:absolute;top:0;left:0;right:0;
+  height:4px;background:linear-gradient(90deg,var(--r),var(--b));}
+.guide-badge{display:inline-block;background:var(--or);color:var(--n);
+  font-size:8px;font-weight:800;letter-spacing:1.5px;padding:4px 10px;
+  border-radius:4px;text-transform:uppercase;margin-bottom:16px;width:fit-content;z-index:1;position:relative;}
+/* Croix médicale CSS */
+.guide-cross{position:relative;z-index:1;margin-bottom:14px;width:48px;height:48px;}
+.guide-cross::before{content:'';position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);width:20px;height:48px;
+  background:rgba(255,255,255,.15);border-radius:4px;}
+.guide-cross::after{content:'';position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);width:48px;height:20px;
+  background:rgba(255,255,255,.15);border-radius:4px;}
+.guide-cross .cross-inner{position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);width:12px;height:30px;
+  background:var(--r);border-radius:3px;z-index:2;}
+.guide-cross .cross-inner::after{content:'';position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);width:30px;height:12px;
+  background:var(--r);border-radius:3px;}
+.guide-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+  color:#fff;line-height:1.2;margin-bottom:5px;position:relative;z-index:1;}
+.guide-sub{font-size:10px;color:var(--orc);font-weight:700;
+  position:relative;z-index:1;margin-bottom:auto;}
+.guide-lines{margin-top:16px;display:flex;flex-direction:column;gap:5px;
+  position:relative;z-index:1;}
+.gl{height:5px;border-radius:3px;background:rgba(255,255,255,.1);}
+.gl.b{background:rgba(26,107,154,.4);width:68%;}
+.gl.r{background:rgba(192,57,43,.3);width:45%;}
+.gl.g{background:rgba(26,122,74,.3);width:78%;}
+.guide-pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;
+  position:relative;z-index:1;}
+.guide-pill{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
+  border-radius:100px;padding:3px 8px;font-size:7.5px;color:rgba(255,255,255,.6);font-weight:600;}
+.guide-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:14px;}
+.gs{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+  border-radius:9px;padding:9px 5px;text-align:center;}
+.gs-n{font-family:'Space Mono',monospace;font-size:20px;font-weight:700;
+  color:var(--orc);line-height:1;display:block;}
+.gs-l{font-size:8px;color:rgba(255,255,255,.4);margin-top:2px;}
+.float-badge{position:absolute;top:-14px;right:-12px;background:var(--r);
+  color:#fff;font-size:9.5px;font-weight:800;padding:8px 12px;border-radius:10px;
+  box-shadow:0 8px 22px rgba(192,57,43,.45);text-align:center;line-height:1.4;
+  animation:wobble 3s 2s ease infinite;}
+@keyframes wobble{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+
+/* MOBILE MOCKUP */
+.hero-mob-mockup{display:none;margin:16px 0 6px;max-width:200px;}
+
+/* SECTIONS */
+.container{max-width:1100px;margin:0 auto;padding:0 20px;}
+section{padding:72px 20px;}
+.reveal{opacity:0;transform:translateY(26px);
+  transition:opacity .6s ease,transform .6s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+.eyebrow{display:block;font-size:11px;font-weight:800;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--b);border-left:3px solid var(--or);
+  padding-left:12px;margin-bottom:13px;}
+.sec-title{font-family:'Playfair Display',serif;
+  font-size:clamp(26px,3.5vw,44px);font-weight:900;line-height:1.15;
+  color:var(--n);margin-bottom:13px;}
+.sec-title em{font-style:italic;color:var(--b);}
+.sec-sub{font-size:16px;color:var(--gr);line-height:1.75;max-width:600px;}
+
+/* VRAI SCENARIO */
+.scenario{background:var(--n);color:#fff;}
+.scenario .eyebrow{color:var(--orc);border-color:var(--or);}
+.scenario .sec-title{color:#fff;}
+.scenario-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;margin-top:48px;}
+.sc-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;padding:26px;transition:all .3s;}
+.sc-card:hover{border-color:rgba(212,144,10,.25);background:rgba(255,255,255,.06);}
+.sc-icon{font-size:28px;margin-bottom:12px;}
+.sc-title{font-weight:700;font-size:15px;color:#fff;margin-bottom:8px;}
+.sc-text{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;}
+.sc-pivot{margin-top:48px;background:linear-gradient(135deg,rgba(26,107,154,.2),rgba(26,122,74,.1));
+  border:1px solid rgba(26,107,154,.25);border-radius:18px;padding:38px;text-align:center;}
+.sc-pivot p{font-family:'Playfair Display',serif;font-size:clamp(17px,2.5vw,26px);
+  color:#fff;line-height:1.55;font-weight:700;}
+.sc-pivot p em{color:var(--orc);font-style:italic;}
+
+/* CONTENU */
+.content-sec{background:var(--bg);}
+.modules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:16px;margin-top:48px;}
+.mod{background:var(--w);border-radius:16px;overflow:hidden;
+  border:1px solid #E5EDF5;box-shadow:0 2px 14px rgba(26,107,154,.05);
+  transition:transform .3s,box-shadow .3s;}
+.mod:hover{transform:translateY(-5px);box-shadow:0 14px 40px rgba(26,107,154,.1);}
+.mod-head{padding:16px 20px;display:flex;align-items:center;gap:11px;}
+.mod-num{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;
+  color:var(--orc);background:rgba(0,0,0,.2);padding:3px 8px;border-radius:5px;flex-shrink:0;}
+.mod-ht{font-size:14px;font-weight:700;color:#fff;}
+.mod-body{padding:15px 20px;}
+.mod-item{display:flex;gap:9px;align-items:flex-start;padding:6px 0;
+  border-bottom:1px solid #F0F5F8;font-size:13px;color:#3A4A5C;line-height:1.5;}
+.mod-item:last-child{border-bottom:none;}
+.mod-item::before{content:'✓';font-weight:800;font-size:11px;flex-shrink:0;margin-top:2px;}
+
+/* Bonus banner */
+.bonus-row{display:flex;gap:16px;margin-top:24px;flex-wrap:wrap;}
+.bonus-card{flex:1;min-width:220px;background:var(--n);border-radius:16px;
+  padding:24px;border:1px solid rgba(212,144,10,.2);display:flex;gap:16px;align-items:flex-start;}
+.bc-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;
+  justify-content:center;font-size:24px;flex-shrink:0;}
+.bc-info{}
+.bc-lbl{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  color:var(--orc);margin-bottom:4px;}
+.bc-title{font-size:16px;font-weight:800;color:#fff;margin-bottom:4px;}
+.bc-desc{font-size:12.5px;color:rgba(255,255,255,.5);line-height:1.6;}
+
+/* CHIFFRES */
+.nums-sec{background:linear-gradient(160deg,#0d2040 0%,#0a1628 100%);color:#fff;text-align:center;}
+.nums-sec .sec-title{color:#fff;}
+.nums-sec .sec-sub{color:rgba(255,255,255,.6);margin:0 auto;}
+.nums-sec .eyebrow{color:var(--orc);border-color:var(--or);display:inline-block;text-align:left;}
+.nums-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:18px;margin-top:48px;}
+.num-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:14px;padding:26px 16px;transition:background .3s;}
+.num-card:hover{background:rgba(255,255,255,.1);}
+.num-val{font-family:'Space Mono',monospace;font-size:42px;font-weight:700;
+  color:var(--orc);line-height:1;margin-bottom:7px;display:block;}
+.num-lbl{font-size:13px;color:rgba(255,255,255,.6);line-height:1.5;}
+.num-sub{font-size:11px;color:rgba(255,255,255,.3);margin-top:3px;}
+
+/* NOUVEAU : Aperçu contenu visuel */
+.apercu-sec{background:var(--w);}
+.apercu-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px;align-items:start;}
+.apercu-left{}
+.fievre-demo{border-radius:16px;overflow:hidden;border:1px solid #E5EDF5;}
+.fievre-row{display:flex;align-items:center;gap:0;}
+.fievre-temp{padding:12px 14px;font-family:'Space Mono',monospace;font-size:13px;
+  font-weight:700;color:#fff;width:100px;flex-shrink:0;text-align:center;}
+.fievre-label{padding:12px 16px;font-size:13px;font-weight:700;color:#fff;
+  flex:1;text-align:center;}
+.fievre-action{padding:12px 14px;font-size:12px;color:var(--n);flex:2;line-height:1.4;}
+.plantes-mini{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px;}
+.pm-card{background:var(--gp);border-radius:10px;padding:12px;
+  display:flex;gap:8px;align-items:center;}
+.pm-emoji{font-size:20px;flex-shrink:0;}
+.pm-name{font-size:12px;font-weight:700;color:var(--g);}
+.pm-use{font-size:10.5px;color:var(--gr);}
+.apercu-right{}
+.urgence-demo{background:var(--rp);border-radius:16px;overflow:hidden;
+  border:2px solid var(--r);}
+.urgence-title{background:var(--r);padding:12px 16px;
+  font-size:13px;font-weight:800;color:#fff;}
+.urgence-item{display:flex;gap:10px;padding:10px 16px;
+  border-bottom:1px solid rgba(192,57,43,.1);align-items:flex-start;}
+.urgence-item:last-child{border-bottom:none;}
+.urgence-excl{color:var(--r);font-weight:800;font-size:16px;flex-shrink:0;margin-top:-2px;}
+.urgence-text{font-size:13px;color:var(--n);line-height:1.5;}
+
+/* TEMOIGNAGES */
+.tems-sec{background:var(--bg);}
+.tems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:20px;margin-top:48px;}
+.tem{background:var(--w);border-radius:18px;padding:28px;
+  border:1px solid #E5EDF5;position:relative;overflow:hidden;}
+.tem::after{content:'"';position:absolute;top:-8px;right:14px;
+  font-family:'Playfair Display',serif;font-size:88px;
+  color:rgba(26,107,154,.06);line-height:1;pointer-events:none;}
+.tem-profile{display:flex;gap:12px;align-items:center;margin-bottom:15px;}
+.tem-av{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:15px;font-weight:800;color:#fff;flex-shrink:0;}
+.tem-name{font-weight:800;font-size:15px;color:var(--n);}
+.tem-role{font-size:11.5px;color:var(--gr);}
+.tem-loc{font-size:11px;color:var(--b);font-weight:700;}
+.tem-stars{color:var(--or);font-size:15px;margin-bottom:10px;}
+.tem-text{font-size:14px;color:#444;line-height:1.75;font-style:italic;}
+.tem-result{margin-top:13px;padding:8px 12px;background:var(--gp);
+  border-radius:7px;font-size:12px;font-weight:700;color:var(--g);}
+
+/* OFFRES */
+.offres-sec{background:var(--w);}
+.offres-sec .sec-sub{margin-bottom:24px;}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:22px;margin-top:48px;max-width:800px;margin-left:auto;margin-right:auto;}
+.pc{border-radius:22px;padding:34px 28px;border:2px solid #E5EDF5;
+  background:var(--w);position:relative;transition:transform .3s,box-shadow .3s;}
+.pc:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(26,107,154,.1);}
+.pc.feat{border-color:var(--b);background:linear-gradient(160deg,#f0f6fb,var(--w));
+  box-shadow:0 6px 36px rgba(26,107,154,.12);}
+.pc-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--or),var(--orc));color:var(--n);
+  font-size:10px;font-weight:800;letter-spacing:1.5px;
+  padding:4px 14px;border-radius:100px;text-transform:uppercase;white-space:nowrap;}
+.pc-name{font-size:11.5px;font-weight:800;letter-spacing:2px;
+  text-transform:uppercase;color:var(--gr);margin-bottom:10px;}
+.pc-orig{font-size:13px;color:var(--gr);text-decoration:line-through;margin-bottom:3px;}
+.pc-price{display:flex;align-items:baseline;gap:4px;margin-bottom:4px;}
+.pc-amt{font-family:'Space Mono',monospace;font-size:44px;font-weight:700;
+  color:var(--n);line-height:1;}
+.pc-cur{font-size:15px;font-weight:700;color:var(--gr);}
+.pc-save{display:inline-block;background:var(--orp);color:#8B5E0A;
+  font-size:11px;font-weight:700;padding:2px 9px;border-radius:5px;margin-bottom:20px;}
+.pc-note{font-size:11px;color:var(--r);font-weight:700;margin-bottom:8px;}
+.pc-div{height:1px;background:#E5EDF5;margin:15px 0;}
+.pc-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:22px;}
+.pc-feat{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;
+  color:#3A4A5C;line-height:1.5;}
+.pc-feat .ck{color:var(--b);font-weight:800;font-size:13px;flex-shrink:0;margin-top:1px;}
+.pc-feat.hl{font-weight:700;color:var(--n);}
+.pc-feat.new{font-weight:700;color:var(--r);}
+.btn-p{width:100%;display:flex;align-items:center;justify-content:center;
+  gap:7px;padding:16px 22px;border-radius:10px;border:none;cursor:pointer;
+  font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:15px;
+  text-decoration:none;transition:all .3s;position:relative;overflow:hidden;}
+.btn-p::before{content:'';position:absolute;top:-50%;left:-60%;width:40%;height:200%;
+  background:rgba(255,255,255,.18);transform:skewX(-20deg);
+  animation:shimmer 3.5s ease infinite;}
+.btn-p.bb{background:linear-gradient(135deg,var(--b),var(--bc));color:#fff;
+  box-shadow:0 8px 22px rgba(26,107,154,.28);}
+.btn-p.bb:hover{box-shadow:0 14px 36px rgba(26,107,154,.42);transform:translateY(-2px) scale(1.02);}
+.btn-p.oo{background:linear-gradient(135deg,var(--or),var(--orc),var(--or));
+  background-size:200% auto;color:var(--n);
+  box-shadow:0 8px 22px rgba(212,144,10,.3);animation:shine 3s linear infinite;}
+.btn-p.oo:hover{box-shadow:0 16px 40px rgba(212,144,10,.48);transform:translateY(-3px) scale(1.02);}
+.pay-icons{display:flex;justify-content:center;gap:7px;margin-top:11px;flex-wrap:wrap;}
+.pay-pill{background:var(--bg);border:1px solid #E5EDF5;border-radius:6px;
+  padding:4px 11px;font-size:11px;font-weight:700;color:#555;}
+.pay-pill.wave{color:#0059AA;background:#EBF3FF;border-color:#CCDDF5;}
+.pay-pill.orange{color:#CC5500;background:#FFF2EA;border-color:#FFD9B8;}
+.pay-pill.mtn{color:#AA6600;background:#FFF8EE;border-color:#FFE5B0;}
+.timer-block{margin-top:36px;background:var(--n);border-radius:16px;
+  padding:24px 30px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  border:1px solid rgba(212,144,10,.18);}
+.t-icon{font-size:34px;flex-shrink:0;}
+.t-info{flex:1;min-width:160px;}
+.t-title{font-size:15px;font-weight:800;color:#fff;margin-bottom:3px;}
+.t-sub{font-size:12px;color:rgba(255,255,255,.5);line-height:1.6;}
+.t-nums{display:flex;gap:8px;flex-shrink:0;}
+.tn{text-align:center;background:rgba(255,255,255,.06);border-radius:8px;
+  padding:6px 12px;min-width:48px;}
+.tn-n{font-family:'Space Mono',monospace;font-size:22px;font-weight:700;
+  color:var(--orc);line-height:1;display:block;}
+.tn-l{font-size:9px;color:rgba(255,255,255,.35);font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;}
+
+/* FAQ */
+.faq-sec{background:var(--bg);}
+.faq-list{max-width:740px;margin:48px auto 0;display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:var(--w);border-radius:11px;border:1px solid #E5EDF5;overflow:hidden;}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;
+  gap:14px;padding:16px 20px;background:none;border:none;cursor:pointer;
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;
+  color:var(--n);text-align:left;transition:color .2s;}
+.faq-q:hover{color:var(--b);}
+.faq-chev{width:24px;height:24px;border-radius:50%;background:var(--bp);
+  display:flex;align-items:center;justify-content:center;color:var(--b);
+  font-size:14px;flex-shrink:0;transition:transform .3s,background .2s;}
+.faq-item.open .faq-chev{transform:rotate(45deg);background:var(--b);color:#fff;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;
+  font-size:13.5px;color:var(--gr);line-height:1.8;padding:0 20px;}
+.faq-item.open .faq-a{max-height:280px;padding:0 20px 17px;}
+
+/* GARANTIE */
+.garantie{background:var(--g);text-align:center;padding:72px 20px;color:#fff;}
+.g-icon{width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.12);
+  border:2px solid rgba(255,255,255,.25);display:flex;align-items:center;
+  justify-content:center;font-size:34px;margin:0 auto 18px;}
+.g-title{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,36px);
+  font-weight:900;margin-bottom:11px;}
+.g-text{font-size:15px;color:rgba(255,255,255,.8);max-width:500px;
+  margin:0 auto;line-height:1.75;}
+
+/* FINAL CTA */
+.final{background:linear-gradient(160deg,#0a1628 0%,#0d2040 100%);
+  text-align:center;padding:96px 20px;position:relative;overflow:hidden;}
+.final::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 100%,rgba(26,107,154,.35) 0%,transparent 60%);}
+.final-title{font-family:'Playfair Display',serif;
+  font-size:clamp(26px,5vw,52px);font-weight:900;color:#fff;
+  margin-bottom:17px;position:relative;}
+.final-title span{color:var(--orc);}
+.final-sub{font-size:16px;color:rgba(255,255,255,.65);max-width:520px;
+  margin:0 auto 42px;line-height:1.7;position:relative;}
+.final-btns{display:flex;flex-direction:column;align-items:center;
+  gap:12px;position:relative;}
+.final-note{font-size:12px;color:rgba(255,255,255,.28);margin-top:8px;
+  display:flex;align-items:center;gap:5px;justify-content:center;}
+
+/* FOOTER */
+footer{background:var(--n);padding:28px 20px;text-align:center;
+  color:rgba(255,255,255,.35);font-size:12px;
+  border-top:1px solid rgba(255,255,255,.05);}
+footer strong{color:var(--orc);}
+.f-links{display:flex;justify-content:center;gap:20px;margin-top:10px;flex-wrap:wrap;}
+.f-links a{color:rgba(255,255,255,.3);text-decoration:none;font-size:11.5px;transition:color .2s;}
+.f-links a:hover{color:var(--orc);}
+
+/* STICKY MOBILE */
+.sticky-mob{display:none;position:fixed;bottom:0;left:0;right:0;
+  background:var(--n);padding:12px 16px;border-top:2px solid var(--or);
+  z-index:99;align-items:center;gap:11px;}
+.sticky-mob strong{display:block;color:#fff;font-size:12.5px;}
+.sticky-mob span{color:var(--orc);font-size:11px;font-weight:600;}
+@media(max-width:640px){.sticky-mob{display:flex;}}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .hero{padding:32px 20px 44px;}
+  .guide-mockup{display:none;}
+  .hero-mob-mockup{display:block;}
+  .apercu-grid{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  .hero{padding:22px 16px 32px;}
+  .hero-eyebrow{margin-bottom:10px;}
+  .hero-title{margin-bottom:10px;font-size:clamp(24px,7vw,32px);line-height:1.2;}
+  .hero-proof{gap:10px;margin-bottom:24px;}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="dot"></div>
+  <span>🔥 Offre de lancement — <strong>5 000 FCFA</strong> pour les <strong>30 premiers uniquement</strong> · Ensuite 15 000 FCFA · <strong>Places limitées</strong></span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">💊 Guide Santé Familiale 2026</div>
+      <h1 class="hero-title">
+        Il est minuit. Toi ou quelqu'un dans ta maison ne va pas bien.
+        La pharmacie ou la clinique est loin. Tu n'es pas médecin.
+        <em>Et là, tu fais quoi exactement ?</em>
+      </h1>
+
+      <!-- MOCKUP MOBILE — entre titre et sous-titre -->
+      <div class="hero-mob-mockup">
+        <div style="position:relative;display:inline-block;">
+          <div class="float-badge" style="position:absolute;top:-12px;right:-10px;z-index:2;">BONUS<br/>Fiche<br/>Urgence 🚨</div>
+          <div class="guide-cover" style="min-height:260px;border-radius:4px 14px 14px 4px;">
+            <div class="guide-badge">Guide 2026</div>
+            <div class="guide-cross"><div class="cross-inner"></div></div>
+            <div class="guide-title">Ma Santé entre mes Mains</div>
+            <div class="guide-sub">Learn and Earn — Digital Solution</div>
+            <div class="guide-lines">
+              <div class="gl b"></div><div class="gl"></div>
+              <div class="gl r"></div><div class="gl g"></div>
+            </div>
+            <div class="guide-pills">
+              <div class="guide-pill">Fièvre</div>
+              <div class="guide-pill">Paludisme</div>
+              <div class="guide-pill">20 plantes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-sub">Ce guide te donne les connaissances pour <strong>agir correctement</strong> dans les premières heures d'une urgence — reconnaître ce qui est grave, soigner ce qui ne l'est pas, et utiliser intelligemment les plantes médicinales africaines que la nature met à ta disposition.</p>
+      <div class="hero-proof">
+        <div class="hp"><div class="hp-tick">✓</div> 35 pages de contenu terrain</div>
+        <div class="hp"><div class="hp-tick">✓</div> 13 modules complets</div>
+        <div class="hp"><div class="hp-tick">✓</div> 20 plantes médicinales africaines</div>
+        <div class="hp"><div class="hp-tick">✓</div> Fiche urgence à imprimer offerte</div>
+        <div class="hp"><div class="hp-tick">✓</div> Garanti 7 jours</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#offres" class="btn-main">💊 Je protège ma famille maintenant</a>
+        <a href="#contenu" class="btn-ghost">↓ Voir ce qu'il y a dedans</a>
+        <p class="hero-note">🔒 Paiement sécurisé · Livraison instantanée · Remboursé si insatisfait</p>
+      </div>
+    </div>
+
+    <div class="guide-mockup">
+      <div style="position:relative;">
+        <div class="float-badge">BONUS<br/>Fiche<br/>Urgence 🚨</div>
+        <div class="guide-cover">
+          <div class="guide-badge">Guide Santé 2026</div>
+          <div class="guide-cross"><div class="cross-inner"></div></div>
+          <div class="guide-title">Ma Santé<br/>entre mes Mains</div>
+          <div class="guide-sub">Learn and Earn — Digital Solution</div>
+          <div class="guide-lines">
+            <div class="gl b"></div><div class="gl"></div>
+            <div class="gl r"></div><div class="gl g"></div><div class="gl"></div>
+          </div>
+          <div class="guide-pills">
+            <div class="guide-pill">Fièvre & Paludisme</div>
+            <div class="guide-pill">Diarrhée</div>
+            <div class="guide-pill">Plaies & Brûlures</div>
+            <div class="guide-pill">20 Plantes africaines</div>
+            <div class="guide-pill">Diabète & HTA</div>
+            <div class="guide-pill">Enfants & Femmes</div>
+          </div>
+        </div>
+        <div class="guide-stats">
+          <div class="gs"><span class="gs-n">35</span><div class="gs-l">Pages</div></div>
+          <div class="gs"><span class="gs-n">13</span><div class="gs-l">Modules</div></div>
+          <div class="gs"><span class="gs-n">20</span><div class="gs-l">Plantes</div></div>
+          <div class="gs"><span class="gs-n">3</span><div class="gs-l">Bonus</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIO RÉEL -->
+<section class="scenario">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Ces situations, tu les connais</div>
+      <h2 class="sec-title" style="color:#fff;">Ce sont des scènes que chaque<br/>famille africaine a vécues.</h2>
+      <p class="sec-sub">Et à chaque fois, la même question : est-ce grave ? Qu'est-ce que je fais là, maintenant, avec ce que j'ai ?</p>
+    </div>
+    <div class="scenario-grid reveal">
+      <div class="sc-card">
+        <div class="sc-icon">🌡️</div>
+        <div class="sc-title">La fièvre qui monte à 23h</div>
+        <div class="sc-text">La pharmacie est fermée ou trop loin. Tu ne sais pas si c'est le paludisme ou juste une infection virale. Tu paniques. Et l'enfant brûle.</div>
+      </div>
+      <div class="sc-card">
+        <div class="sc-icon">💧</div>
+        <div class="sc-title">La diarrhée de l'enfant depuis 2 jours</div>
+        <div class="sc-text">Tu vois qu'il s'affaiblit. Tu ne sais pas à quel moment c'est vraiment dangereux. Tu ne sais pas si les SRO ça suffit ou si c'est l'hôpital maintenant.</div>
+      </div>
+      <div class="sc-card">
+        <div class="sc-icon">🩹</div>
+        <div class="sc-title">La coupure profonde un dimanche</div>
+        <div class="sc-text">Il faut nettoyer, désinfecter. Mais avec quoi ? Comment ? Est-ce que c'est le tétanos ? Est-ce qu'il faut les points ? Tu fais au mieux — mais tu n'es pas sûr.</div>
+      </div>
+      <div class="sc-card">
+        <div class="sc-icon">💊</div>
+        <div class="sc-title">Le père diabétique qui refuse d'aller à l'hôpital</div>
+        <div class="sc-text">Il se plaint mais il minimise. Tu ne sais pas quels signes surveillent le médecin. Tu ne sais pas quand c'est une vraie urgence et quand tu peux attendre.</div>
+      </div>
+    </div>
+    <div class="sc-pivot reveal">
+      <p>Tu n'as pas besoin d'être médecin.<br/>
+      Tu as besoin <em>des bonnes informations au bon moment.</em><br/>Ce guide est fait pour ça.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENU -->
+<section class="content-sec" id="contenu">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow" style="display:inline-block;text-align:left;">35 pages de contenu concret</div>
+      <h2 class="sec-title">13 modules. <em>Zéro jargon.</em><br/>100% adapté à l'Afrique.</h2>
+      <p class="sec-sub" style="margin:0 auto;">Chaque module répond à une situation réelle que tu peux vivre demain matin. Avec les plantes de ton marché et les gestes que tu peux apprendre ce soir.</p>
+    </div>
+    <div class="modules-grid reveal">
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#1A6B9A,#2E8EC0);">
+          <div class="mod-num">01</div><div class="mod-ht">Trousse de premiers secours africaine</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item" style="--c:#1A6B9A;">Les 15 essentiels à avoir chez toi</div>
+          <div class="mod-item">8 plantes médicinales à toujours avoir</div>
+          <div class="mod-item">Tableau médicaments avec posologies</div>
+          <div class="mod-item">Où trouver chaque article en Afrique</div>
+        </div>
+      </div>
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#E67E22,#F39C12);">
+          <div class="mod-num">02</div><div class="mod-ht">Gérer la fièvre</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Échelle de sévérité avec code couleur</div>
+          <div class="mod-item">Bains tièdes, hydratation, gingembre-miel</div>
+          <div class="mod-item">Fièvre et paludisme — le test TDR expliqué</div>
+          <div class="mod-item">Les 8 signes qui imposent l'hôpital immédiat</div>
+        </div>
+      </div>
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#1A6B9A,#2E8EC0);">
+          <div class="mod-num">03</div><div class="mod-ht">Diarrhée & Déshydratation</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Reconnaître la déshydratation légère vs sévère</div>
+          <div class="mod-item">Recette SRO maison si aucun sachet disponible</div>
+          <div class="mod-item">Feuilles de goyave, plantain vert, charbon actif</div>
+          <div class="mod-item">Ce qu'il faut manger (et éviter) pendant la diarrhée</div>
+        </div>
+      </div>
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#C0392B,#E74C3C);">
+          <div class="mod-num">04</div><div class="mod-ht">Plaies & Brûlures</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">5 étapes pour nettoyer une plaie correctement</div>
+          <div class="mod-item">Ce qu'il ne faut JAMAIS mettre sur une brûlure</div>
+          <div class="mod-item">Aloe vera, miel, huile de coco — cicatrisants naturels</div>
+          <div class="mod-item">Classification 1er / 2ème / 3ème degré</div>
+        </div>
+      </div>
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#1A7A4A,#2E9E60);">
+          <div class="mod-num">05</div><div class="mod-ht">Maladies courantes en Afrique</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Paludisme — reconnaître, tester, traiter</div>
+          <div class="mod-item">Infections respiratoires — rhume, grippe, bronchite</div>
+          <div class="mod-item">Ulcère, gastrite, constipation — remèdes naturels</div>
+          <div class="mod-item">Maux de tête — causes et signaux d'alarme</div>
+        </div>
+      </div>
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#7D3C98,#9B59B6);">
+          <div class="mod-num">06</div><div class="mod-ht">Santé femme & enfant</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Douleurs menstruelles — gingembre vs ibuprofène</div>
+          <div class="mod-item">Grossesse — inconforts et ce qu'il ne faut jamais faire</div>
+          <div class="mod-item">Nourrisson — 6 signaux d'urgence absolue</div>
+          <div class="mod-item">Calendrier vaccinal complet Afrique de l'Ouest/Centrale</div>
+        </div>
+      </div>
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#C0392B,#E74C3C);">
+          <div class="mod-num">07</div><div class="mod-ht">Urgences à domicile</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Convulsions de l'enfant — quoi faire, quoi ne jamais faire</div>
+          <div class="mod-item">Étouffement — manœuvre de Heimlich expliquée simplement</div>
+          <div class="mod-item">Morsure de serpent — les erreurs qui tuent</div>
+          <div class="mod-item">Piqûres de scorpion et morsures de chien</div>
+        </div>
+      </div>
+      <div class="mod">
+        <div class="mod-head" style="background:linear-gradient(135deg,#1A7A4A,#2E9E60);">
+          <div class="mod-num">08</div><div class="mod-ht">Hygiène préventive & Alimentation</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">10 règles qui préviennent 80% des maladies</div>
+          <div class="mod-item">Les aliments qui protègent l'immunité en Afrique</div>
+          <div class="mod-item">Ce qui affaiblit les défenses sans qu'on le sache</div>
+          <div class="mod-item">Hygiène de l'eau — purifier à la maison</div>
+        </div>
+      </div>
+      <div class="mod" style="border-color:#E74C3C;">
+        <div class="mod-head" style="background:linear-gradient(135deg,#1A6B9A,#2471A3);">
+          <div class="mod-num">09</div><div class="mod-ht">🆕 Guide par partie du corps</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Tête, poitrine, ventre, muscles, reins — 5 zones</div>
+          <div class="mod-item">Tableau symptôme → cause possible → conduite à tenir</div>
+          <div class="mod-item">Signes qui imposent l'hôpital par zone</div>
+          <div class="mod-item">À consulter en 30 secondes en cas d'urgence</div>
+        </div>
+      </div>
+      <div class="mod" style="border-color:#E74C3C;">
+        <div class="mod-head" style="background:linear-gradient(135deg,#E67E22,#D4900A);">
+          <div class="mod-num">10</div><div class="mod-ht">🆕 Maladies chroniques africaines</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Diabète — reconnaître, gérer, éviter les crises</div>
+          <div class="mod-item">Hypertension — chiffres, bissap, ail, sel, urgences</div>
+          <div class="mod-item">Drépanocytose — quotidien, déclencheurs, urgences</div>
+          <div class="mod-item">Remèdes naturels africains reconnus pour chacune</div>
+        </div>
+      </div>
+      <div class="mod" style="border-color:#E74C3C;">
+        <div class="mod-head" style="background:linear-gradient(135deg,#1A6B9A,#2E8EC0);">
+          <div class="mod-num">11</div><div class="mod-ht">🆕 Santé bucco-dentaire</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Clou de girofle, ail écrasé, neem — antidouleur naturel</div>
+          <div class="mod-item">Tableau problèmes dentaires courants & solutions</div>
+          <div class="mod-item">Quand le dentiste est OBLIGATOIRE</div>
+          <div class="mod-item">Le bâton de neem — brosse à dents naturelle africaine</div>
+        </div>
+      </div>
+      <div class="mod" style="border-color:#E74C3C;">
+        <div class="mod-head" style="background:linear-gradient(135deg,#7D3C98,#9B59B6);">
+          <div class="mod-num">12</div><div class="mod-ht">🆕 Santé mentale — briser le tabou</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Stress chronique vs dépression — reconnaître les signes</div>
+          <div class="mod-item">Ce qu'on peut faire à la maison (sport, parler, sommeil)</div>
+          <div class="mod-item">Ressources disponibles en Afrique francophone</div>
+          <div class="mod-item">Les signaux d'alarme à ne jamais ignorer</div>
+        </div>
+      </div>
+      <div class="mod" style="border-color:#E74C3C;">
+        <div class="mod-head" style="background:linear-gradient(135deg,#1A7A4A,#2E9E60);">
+          <div class="mod-num">13</div><div class="mod-ht">🆕 Santé de la peau</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-item">Teigne, gale, furoncle, eczéma, acné tropicale</div>
+          <div class="mod-item">Huile de neem, beurre de karité, argile verte</div>
+          <div class="mod-item">Traitement vs consultation — savoir quand</div>
+          <div class="mod-item">Mycose des pieds — prévention et traitement naturel</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUS -->
+    <div class="bonus-row reveal">
+      <div class="bonus-card">
+        <div class="bc-icon" style="background:rgba(26,122,74,.15);">🌿</div>
+        <div class="bc-info">
+          <div class="bc-lbl">Bonus 01</div>
+          <div class="bc-title">20 Plantes Médicinales Africaines</div>
+          <div class="bc-desc">Tableau complet avec noms locaux (Wolof, Dioula, Haoussa), usage principal et préparation. Du gingembre au neem en passant par le moringa.</div>
+        </div>
+      </div>
+      <div class="bonus-card">
+        <div class="bc-icon" style="background:rgba(26,107,154,.15);">💊</div>
+        <div class="bc-info">
+          <div class="bc-lbl">Bonus 02</div>
+          <div class="bc-title">Tableau Médicaments & Posologies</div>
+          <div class="bc-desc">Paracétamol, Ibuprofène, SRO, Charbon, Mébendazole et plus — doses adulte et enfant, précautions. À garder avec ta trousse.</div>
+        </div>
+      </div>
+      <div class="bonus-card" style="border-color:rgba(192,57,43,.3);">
+        <div class="bc-icon" style="background:rgba(192,57,43,.12);">🚨</div>
+        <div class="bc-info">
+          <div class="bc-lbl">Bonus 03 — Premium exclusif</div>
+          <div class="bc-title">Fiche d'Urgence à Imprimer</div>
+          <div class="bc-desc">1 page PDF : fièvre, diarrhée, plaie, brûlure, étouffement, convulsion — gestes qui sauvent en une seule feuille à afficher dans ta maison.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APERÇU VISUEL DU CONTENU -->
+<section class="apercu-sec">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow" style="display:inline-block;text-align:left;">Aperçu du guide</div>
+      <h2 class="sec-title">Tu vois avant d'acheter.<br/><em>C'est du concret, pas des promesses.</em></h2>
+    </div>
+    <div class="apercu-grid reveal">
+      <div class="apercu-left">
+        <p style="font-size:14px;font-weight:700;color:var(--b);margin-bottom:12px;">📊 Tableau Fièvre — Échelle de sévérité</p>
+        <div class="fievre-demo">
+          <div class="fievre-row">
+            <div class="fievre-temp" style="background:#1A7A4A;">37,5-38°C</div>
+            <div class="fievre-label" style="background:#2E9E60;">Légère</div>
+            <div class="fievre-action">Observer, hydrater, surveiller à la maison</div>
+          </div>
+          <div class="fievre-row">
+            <div class="fievre-temp" style="background:#D4900A;">38-38,5°C</div>
+            <div class="fievre-label" style="background:#F0B429;">Modérée</div>
+            <div class="fievre-action">Paracétamol, bains tièdes, hydrater</div>
+          </div>
+          <div class="fievre-row">
+            <div class="fievre-temp" style="background:#E67E22;">38,5-39,5°C</div>
+            <div class="fievre-label" style="background:#E87722;">Importante</div>
+            <div class="fievre-action" style="color:var(--r);">Paracétamol impératif, consulter si persistant</div>
+          </div>
+          <div class="fievre-row">
+            <div class="fievre-temp" style="background:#C0392B;">39,5-40°C</div>
+            <div class="fievre-label" style="background:#E74C3C;">Élevée</div>
+            <div class="fievre-action" style="color:var(--r);font-weight:700;">Consultation médicale urgente</div>
+          </div>
+          <div class="fievre-row">
+            <div class="fievre-temp" style="background:#8B0000;font-size:11px;">Au-dessus 40°C</div>
+            <div class="fievre-label" style="background:#8B0000;font-size:11px;">DANGER</div>
+            <div class="fievre-action" style="color:#8B0000;font-weight:800;">🚨 HÔPITAL IMMÉDIATEMENT</div>
+          </div>
+        </div>
+        <p style="font-size:14px;font-weight:700;color:var(--g);margin:20px 0 12px;">🌿 Quelques plantes du guide</p>
+        <div class="plantes-mini">
+          <div class="pm-card"><div class="pm-emoji">🌱</div><div><div class="pm-name">Gingembre</div><div class="pm-use">Fièvre, nausées, toux</div></div></div>
+          <div class="pm-card"><div class="pm-emoji">🍃</div><div><div class="pm-name">Neem</div><div class="pm-use">Peau, paludisme, antiseptique</div></div></div>
+          <div class="pm-card"><div class="pm-emoji">🌵</div><div><div class="pm-name">Aloe vera</div><div class="pm-use">Brûlures, plaies, peau</div></div></div>
+          <div class="pm-card"><div class="pm-emoji">🥭</div><div><div class="pm-name">Papayer</div><div class="pm-use">Dengue, paludisme, digestion</div></div></div>
+          <div class="pm-card"><div class="pm-emoji">🧄</div><div><div class="pm-name">Ail</div><div class="pm-use">Antibactérien, immunité</div></div></div>
+          <div class="pm-card"><div class="pm-emoji">🌺</div><div><div class="pm-name">Bissap</div><div class="pm-use">Hypertension, digestion</div></div></div>
+        </div>
+      </div>
+      <div class="apercu-right">
+        <p style="font-size:14px;font-weight:700;color:var(--r);margin-bottom:12px;">🚨 Signaux d'urgence — Aller IMMÉDIATEMENT à l'hôpital</p>
+        <div class="urgence-demo">
+          <div class="urgence-title">⚠️ Ces signes = Ne pas attendre</div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Fièvre au-dessus de 40°C malgré le paracétamol</div></div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Convulsion qui dure plus de 5 minutes</div></div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Raideur de la nuque avec fièvre</div></div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Bébé de moins de 3 mois avec fièvre</div></div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Difficulté à respirer au repos</div></div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Morsure de serpent (quelle que soit l'espèce)</div></div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Yeux très enfoncés + pas d'urine depuis 8h+</div></div>
+          <div class="urgence-item"><div class="urgence-excl">!</div><div class="urgence-text">Vomissements de sang ou selles noires</div></div>
+        </div>
+        <div style="margin-top:16px;background:var(--gp);border-radius:12px;padding:16px;border:1px solid var(--g);">
+          <p style="font-size:13px;font-weight:700;color:var(--g);margin-bottom:8px;">✓ Recette SRO maison — à connaître par cœur</p>
+          <p style="font-size:13px;color:var(--n);line-height:1.7;">
+            <b>1 litre</b> d'eau bouillie et refroidie<br/>
+            + <b>6 cuillères à café</b> de sucre<br/>
+            + <b>½ cuillère à café</b> de sel<br/>
+            <span style="font-size:11.5px;color:var(--gr);">Optionnel : jus d'orange ou banane écrasée pour le potassium</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHIFFRES -->
+<section class="nums-sec">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow">Les chiffres</div>
+      <h2 class="sec-title">La santé en Afrique,<br/><em>c'est une réalité quotidienne.</em></h2>
+      <p class="sec-sub">Ces chiffres expliquent pourquoi ce guide est nécessaire.</p>
+    </div>
+    <div class="nums-grid reveal">
+      <div class="num-card">
+        <span class="num-val">40%</span>
+        <div class="num-lbl">Des décès en Afrique sub-saharienne sont évitables avec une gestion correcte des premiers soins</div>
+      </div>
+      <div class="num-card">
+        <span class="num-val">20</span>
+        <div class="num-lbl">Plantes médicinales africaines détaillées — usage, préparation, et noms en langues locales</div>
+        <div class="num-sub">Disponibles dans tous les marchés</div>
+      </div>
+      <div class="num-card">
+        <span class="num-val">13</span>
+        <div class="num-lbl">Modules complets — dont 5 nouveaux sur les maladies chroniques, la peau, la santé mentale</div>
+        <div class="num-sub">35 pages densément structurées</div>
+      </div>
+      <div class="num-card">
+        <span class="num-val">1</span>
+        <div class="num-lbl">Fiche d'urgence à imprimer et afficher — 6 situations, gestes qui sauvent en 1 page</div>
+        <div class="num-sub">Bonus exclusif Pack Premium</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section class="tems-sec">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow" style="display:inline-block;text-align:left;">Ils ont utilisé ce guide</div>
+      <h2 class="sec-title">Des familles <em>comme la tienne.</em></h2>
+    </div>
+    <div class="tems-grid reveal">
+      <div class="tem">
+        <div class="tem-profile">
+          <div class="tem-av" style="background:#1A7A4A;">AS</div>
+          <div>
+            <div class="tem-name">Awa Seck</div>
+            <div class="tem-role">Mère de 3 enfants</div>
+            <div class="tem-loc">📍 Thiès, Sénégal</div>
+          </div>
+        </div>
+        <div class="tem-stars">★★★★★</div>
+        <div class="tem-text">«Mon fils a fait une forte fièvre un dimanche soir. Avant ce guide, j'aurais paniqué et dépensé de l'argent pour aller aux urgences. J'ai suivi les étapes, fait les bains tièdes, surveillé les signes d'alarme. Le matin, sa fièvre était tombée. Ce guide m'a donné de la confiance.»</div>
+        <div class="tem-result">🌡️ Gérée à la maison · Aucune complication</div>
+      </div>
+      <div class="tem">
+        <div class="tem-profile">
+          <div class="tem-av" style="background:#1A6B9A;">KD</div>
+          <div>
+            <div class="tem-name">Kofi Dramé</div>
+            <div class="tem-role">Chef de famille, diabétique</div>
+            <div class="tem-loc">📍 Abidjan, Côte d'Ivoire</div>
+          </div>
+        </div>
+        <div class="tem-stars">★★★★★</div>
+        <div class="tem-text">«La section sur le diabète m'a ouvert les yeux. Je ne savais pas que certains aliments africains sont excellents pour ma glycémie. Et les signes d'hypoglycémie — je les ignorais complètement. Ma famille sait maintenant quoi faire si je fais une crise.»</div>
+        <div class="tem-result">💊 Mieux géré · Famille mieux informée</div>
+      </div>
+      <div class="tem">
+        <div class="tem-profile">
+          <div class="tem-av" style="background:#7D3C98;">MB</div>
+          <div>
+            <div class="tem-name">Mariama Barry</div>
+            <div class="tem-role">Infirmière auxiliaire</div>
+            <div class="tem-loc">📍 Conakry, Guinée</div>
+          </div>
+        </div>
+        <div class="tem-stars">★★★★★</div>
+        <div class="tem-text">«Même moi qui travaille dans la santé, j'ai appris des choses sur les plantes médicinales africaines. Le tableau des plantes avec les noms locaux — c'est exactement ce qu'il faut pour que les familles du quartier comprennent. J'en recommande une copie à chaque famille que je visite.»</div>
+        <div class="tem-result">🌿 Référencé dans sa pratique communautaire</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFRES -->
+<section class="offres-sec" id="offres">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow" style="display:inline-block;text-align:left;">Choisir ton offre</div>
+      <h2 class="sec-title">Moins cher qu'une ordonnance.<br/><em>Une protection pour toujours.</em></h2>
+      <p class="sec-sub" style="margin:0 auto;">Une offre unique et complète à 5 000 FCFA pour les 30 premiers. Guide complet + Fiche urgence à imprimer incluse. Après, le prix passe à 15 000 FCFA.</p>
+    </div>
+    <div style="max-width:520px;margin:0 auto;margin-top:24px;" class="reveal">
+      <div class="pc feat" style="border-color:var(--b);">
+        <div class="pc-badge">⏳ Offre de lancement — 30 premiers uniquement</div>
+        <div class="pc-name" style="margin-top:10px;">Offre Complète</div>
+        <div class="pc-orig">15 000 FCFA</div>
+        <div class="pc-price"><span class="pc-amt">5 000</span><span class="pc-cur">FCFA</span></div>
+        <div class="pc-save">Tu économises 10 000 FCFA — prix normal après les 30 premiers</div>
+        <div class="pc-note">⏳ Places restantes limitées — le prix passe à 15 000 FCFA après</div>
+        <div class="pc-div"></div>
+        <div class="pc-feats">
+          <div class="pc-feat hl"><span class="ck">✓</span> Guide complet PDF — 35 pages</div>
+          <div class="pc-feat"><span class="ck">✓</span> 13 modules complets</div>
+          <div class="pc-feat"><span class="ck">✓</span> 20 plantes médicinales africaines avec noms locaux</div>
+          <div class="pc-feat new"><span class="ck">✓</span> 🆕 Guide symptômes par partie du corps</div>
+          <div class="pc-feat new"><span class="ck">✓</span> 🆕 Diabète, HTA, Drépanocytose</div>
+          <div class="pc-feat new"><span class="ck">✓</span> 🆕 Santé dentaire, mentale, peau</div>
+          <div class="pc-feat"><span class="ck">✓</span> Tableau médicaments &amp; posologies</div>
+          <div class="pc-feat hl"><span class="ck">✓</span> 🚨 Fiche urgence à imprimer (PDF séparé)</div>
+          <div class="pc-feat"><span class="ck">✓</span> Livraison instantanée — WhatsApp ou email</div>
+          <div class="pc-feat"><span class="ck">✓</span> Garanti 7 jours satisfait ou remboursé</div>
+        </div>
+        <a href="#LIEN_UNIQUE" class="btn-p oo" style="font-size:16px;padding:18px;">💊 Je protège ma famille — 5 000 FCFA →</a>
+        <div class="pay-icons">
+          <span class="pay-pill wave">Wave</span>
+          <span class="pay-pill orange">Orange Money</span>
+          <span class="pay-pill mtn">MTN Money</span>
+        </div>
+      </div>
+    </div>
+    <div class="timer-block reveal">
+      <div class="t-icon">⏳</div>
+      <div class="t-info">
+        <div class="t-title">Offre de lancement — 30 premiers acheteurs</div>
+        <div class="t-sub">Standard ET Premium au même prix de 5 000 FCFA au lieu de 15 000 FCFA. Dès le 31ème acheteur, le prix passe au tarif normal. <strong style="color:var(--orc);">Il ne reste que quelques places.</strong></div>
+      </div>
+      <div class="t-nums">
+        <div class="tn"><span class="tn-n" id="th">71</span><div class="tn-l">Heures</div></div>
+        <div class="tn"><span class="tn-n" id="tm">59</span><div class="tn-l">Min</div></div>
+        <div class="tn"><span class="tn-n" id="ts">59</span><div class="tn-l">Sec</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow" style="display:inline-block;text-align:left;">Questions fréquentes</div>
+      <h2 class="sec-title">Tu hésites encore ?<br/><em>Voilà les réponses.</em></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Ce guide remplace-t-il vraiment le médecin ?<div class="faq-chev">+</div></button>
+        <div class="faq-a">Non — et il ne le prétend pas. Le guide commence et se termine par un disclaimer clair. Ce qu'il fait, c'est te donner les connaissances pour agir correctement dans les premières heures, reconnaître ce qui est grave de ce qui ne l'est pas, et savoir quand partir à l'hôpital. Le médecin reste indispensable pour les cas graves.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Puis-je utiliser ce guide si je n'ai aucune formation médicale ?<div class="faq-chev">+</div></button>
+        <div class="faq-a">Absolument. Ce guide est écrit pour Monsieur et Madame Tout-le-Monde, pas pour un professionnel de santé. Pas de jargon, des exemples concrets, des étapes numérotées, des tableaux clairs. Chaque section est lisible et applicable par n'importe quel membre de la famille.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Les plantes médicinales, c'est vraiment efficace ?<div class="faq-chev">+</div></button>
+        <div class="faq-a">Pour de nombreuses situations courantes, oui. Le gingembre est cliniquement prouvé comme anti-nauséeux aussi efficace que certains médicaments. Le miel a des propriétés antibactériennes reconnues par la science. L'aloe vera est utilisé en dermatologie moderne. Ce guide présente les plantes dont l'efficacité est reconnue, en précisant les limites et les cas où la médecine moderne est indispensable.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Pourquoi le Standard et le Premium ont le même prix ?<div class="faq-chev">+</div></button>
+        <div class="faq-a">C'est une offre de lancement spéciale pour les 30 premiers acheteurs. Le Standard normalement vaut 15 000 FCFA et le Premium aussi. Pour ce lancement, les deux sont proposés à 5 000 FCFA. La seule différence : le Premium inclut la Fiche d'Urgence PDF à imprimer et afficher dans ta maison.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Le guide est adapté à quel pays ?<div class="faq-chev">+</div></button>
+        <div class="faq-a">À toute l'Afrique francophone. Les plantes ont leurs noms locaux en Wolof, Dioula, Haoussa. Le calendrier vaccinal est adapté à l'Afrique de l'Ouest et Centrale. Les exemples viennent du Sénégal, de la Côte d'Ivoire, du Cameroun, de la Guinée et du Burkina Faso — mais les principes médicaux sont universels.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Comment je reçois le guide après paiement ?<div class="faq-chev">+</div></button>
+        <div class="faq-a">La livraison est instantanée. Dès la confirmation de ton paiement, tu reçois le lien de téléchargement par WhatsApp ou email. Tu peux commencer à lire en moins de 5 minutes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Et si le guide ne me convient pas ?<div class="faq-chev">+</div></button>
+        <div class="faq-a">Garantie satisfait ou remboursé 7 jours. Si tu lis le guide et que tu estimes qu'il ne vaut pas ce que tu as payé, tu envoies un message et tu es remboursé intégralement. Sans justification, sans délai. Tu ne prends aucun risque.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIE -->
+<section class="garantie">
+  <div class="container">
+    <div class="g-icon">🛡️</div>
+    <h2 class="g-title">Garantie 7 jours — Zéro risque</h2>
+    <p class="g-text">Tu lis le guide. Si tu n'es pas convaincu qu'il vaut largement ce que tu as payé, tu envoies un message et tu es remboursé intégralement. Pas de formulaire, pas de condition, pas de délai.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <h2 class="final-title">La prochaine urgence<br/>n'attend pas.<br/><span>Toi non plus.</span></h2>
+  <p class="final-sub">Dans quelques minutes, tu peux avoir ce guide sur ton téléphone. La prochaine fois que ton enfant a de la fièvre à 23h, tu sauras exactement quoi faire.</p>
+  <div class="final-btns">
+    <a href="#LIEN_UNIQUE" class="btn-main" style="font-size:17px;padding:21px 50px;">💊 Je protège ma famille — 5 000 FCFA</a>
+    <p class="final-note">🔒 Paiement sécurisé · Livraison instantanée · Garanti 7 jours</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2026 <strong>Learn and Earn — Digital Solution</strong>. Tous droits réservés.</p>
+    <p style="margin-top:5px;font-size:11px;">Ce guide est un document éducatif et informatif. Il ne remplace pas un avis médical professionnel. En cas d'urgence médicale, consultez immédiatement un professionnel de santé.</p>
+    <div class="f-links">
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Conditions générales</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky-mob">
+  <div>
+    <strong>Guide Santé Familiale 2026</strong>
+    <span>5 000 FCFA · 30 premiers uniquement · Livraison instantanée</span>
+  </div>
+  <a href="#offres" class="btn-main" style="font-size:12px;padding:11px 16px;white-space:nowrap;">Commander →</a>
+</div>
+
+<script>
+// COUNTDOWN
+(function(){
+  let t=72*3600-1;
+  const h=document.getElementById('th'),m=document.getElementById('tm'),s=document.getElementById('ts');
+  setInterval(()=>{
+    if(t<=0)return;t--;
+    h.textContent=String(Math.floor(t/3600)).padStart(2,'0');
+    m.textContent=String(Math.floor((t%3600)/60)).padStart(2,'0');
+    s.textContent=String(t%60).padStart(2,'0');
+  },1000);
+})();
+
+// FAQ
+function toggleFaq(btn){
+  const item=btn.parentElement;
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+
+// SCROLL REVEAL
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+
+<!-- SOCIAL PROOF POPUP -->
+<style>
+#sp-popup{position:fixed;bottom:90px;left:24px;z-index:9999;max-width:320px;min-width:280px;
+  background:#fff;border-radius:16px;
+  box-shadow:0 8px 40px rgba(0,0,0,.14),0 2px 8px rgba(0,0,0,.08);
+  display:flex;align-items:center;gap:12px;padding:14px 16px;
+  border-left:4px solid #1A6B9A;transform:translateX(-120%);opacity:0;
+  transition:transform .45s cubic-bezier(.34,1.56,.64,1),opacity .35s ease;
+  font-family:'Plus Jakarta Sans',sans-serif;pointer-events:none;}
+#sp-popup.sp-v{transform:translateX(0);opacity:1;pointer-events:auto;}
+#sp-popup.sp-h{transform:translateX(-120%);opacity:0;
+  transition:transform .35s ease-in,opacity .28s ease-in;}
+.sp-av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:15px;font-weight:800;color:#fff;
+  flex-shrink:0;position:relative;}
+.sp-af{position:absolute;bottom:-2px;right:-2px;font-size:13px;background:#fff;
+  border-radius:50%;width:17px;height:17px;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.15);}
+.sp-c{flex:1;min-width:0;}
+.sp-n{font-size:13px;font-weight:800;color:#0F1A2E;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;margin-bottom:2px;}
+.sp-a{font-size:12px;color:#444;line-height:1.4;}
+.sp-std{font-weight:700;color:#1A6B9A;background:#E8F4FB;padding:1px 6px;border-radius:4px;font-size:11px;display:none;}
+.sp-pre{font-weight:700;color:#7B5800;background:#FEF3DC;padding:1px 6px;border-radius:4px;font-size:11px;}
+.sp-t{font-size:11px;color:#999;margin-top:3px;display:flex;align-items:center;gap:4px;}
+.sp-t::before{content:'';width:6px;height:6px;border-radius:50%;background:#2ecc71;
+  display:inline-block;animation:sp-p 1.8s infinite;}
+@keyframes sp-p{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.3)}}
+.sp-bg{position:absolute;top:-8px;right:-8px;background:#C0392B;color:#fff;
+  font-size:9px;font-weight:800;padding:2px 7px;border-radius:8px;
+  letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;}
+.sp-x{position:absolute;top:8px;right:10px;background:none;border:none;
+  color:#ccc;font-size:14px;cursor:pointer;line-height:1;padding:2px;transition:color .2s;}
+.sp-x:hover{color:#999;}
+.sp-prog{position:absolute;bottom:0;left:0;height:3px;
+  background:linear-gradient(90deg,#1A6B9A,#2E8EC0);border-radius:0 0 0 16px;
+  width:100%;transform-origin:left;animation:sp-pg 10s linear;}
+@keyframes sp-pg{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+@media(max-width:640px){
+  #sp-popup{bottom:90px;left:12px;max-width:260px;min-width:unset;padding:10px 12px;gap:9px;}
+  #sp-popup .sp-av{width:34px;height:34px;font-size:12px;}
+  #sp-popup .sp-n{font-size:12px;}
+  #sp-popup .sp-a{font-size:11px;}
+}
+</style>
+<div id="sp-popup" role="alert" aria-live="polite">
+  <div class="sp-av" id="sp-av">AS</div>
+  <div class="sp-c">
+    <div class="sp-n" id="sp-nm">Awa Seck</div>
+    <div class="sp-a" id="sp-ac">a acheté le <span class="sp-pre">Pack Premium</span></div>
+    <div class="sp-t" id="sp-tm">il y a 4 minutes</div>
+  </div>
+  <div class="sp-bg">Achat vérifié</div>
+  <button class="sp-x" onclick="spClose()" aria-label="Fermer">✕</button>
+  <div class="sp-prog" id="sp-pg"></div>
+</div>
+<script>
+(function(){
+  var SL="#LIEN_UNIQUE";
+  var PL="#LIEN_UNIQUE";
+
+  function norm(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/['']/g,"");}
+
+  var KB=[
+    {k:["comment","obtenir","acheter","commander","avoir","acquerir","telecharger"],
+     r:"C\u2019est tr\u00e8s simple \ud83d\ude0a<br><br>1\ufe0f\u20e3 Clique sur le bouton ci-dessous<br>2\ufe0f\u20e3 Choisis ton mode de paiement (Wave, Orange Money, MTN ou carte)<br>3\ufe0f\u20e3 Tu re\u00e7ois le lien de t\u00e9l\u00e9chargement instantan\u00e9ment par WhatsApp ou email<br><br><a href='"+SL+"' class='ai-cta pre'>\ud83d\udc8a Je protege ma famille \u2014 5 000 FCFA</a>"},
+    {k:["offre","prix","combien","fcfa","cout","cher","5000","15000","pack","standard","premium"],
+     r:"Il y a une seule offre \u2014 compl\u00e8te et tout inclus :<br><br>\ud83d\udc8a <b>Guide complet 35 pages</b> \u2014 13 modules<br>\ud83c\udf3f 20 plantes m\u00e9dicinales africaines<br>\ud83d\udea8 Fiche Urgence PDF \u00e0 imprimer (bonus)<br>\ud83d\udcb3 Tableau m\u00e9dicaments et posologies<br><br>Tout \u00e7a \u00e0 <b>5 000 FCFA</b> au lieu de 15 000 \u2014 offre r\u00e9serv\u00e9e aux 30 premiers.<br><br><a href='"+SL+"' class='ai-cta pre'>\ud83d\udc8a 5 000 FCFA \u2014 Commander maintenant</a>"},
+    {k:["payer","wave","orange","mtn","carte","paiement","moyen"],
+     r:"Tu peux payer avec :<br><br>\ud83d\udc99 <b>Wave</b><br>\ud83d\udfe0 <b>Orange Money</b><br>\ud83d\udfe1 <b>MTN Money</b><br>\ud83d\udcb3 <b>Carte bancaire</b><br><br>Tu choisis ton mode directement sur la page de commande.<br><br><a href='"+SL+"' class='ai-cta pre'>\ud83d\udc8a Commander \u2014 5 000 FCFA</a>"},
+    {k:["livraison","recevoir","quand","telecharger","envoyer","whatsapp","email"],
+     r:"La livraison est <b>instantan\u00e9e</b> \u2705<br><br>D\u00e8s ton paiement confirm\u00e9, tu re\u00e7ois le lien de t\u00e9l\u00e9chargement par <b>WhatsApp ou email</b>. Tu peux commencer \u00e0 lire en moins de 5 minutes."},
+    {k:["garanti","rembours","risque","satisfait","retour"],
+     r:"Tu es prot\u00e9g\u00e9 par une <b>garantie satisfait ou rembours\u00e9 7 jours</b> \ud83d\udee1\ufe0f<br><br>Si le guide ne te convient pas, un simple message suffit et tu es rembours\u00e9 <b>int\u00e9gralement</b>. Sans justification."},
+    {k:["contenu","module","quoi","apprendre","programme","dedans","page"],
+     r:"Le guide contient <b>35 pages et 13 modules</b> :<br><br>\ud83c\udf21\ufe0f Fi\u00e8vre et paludisme<br>\ud83d\udca7 Diarrhee et d\u00e9shydratation<br>\ud83e\ude79 Plaies et br\u00fblures<br>\ud83d\udc76 Sant\u00e9 femme et enfant<br>\ud83d\udea8 Urgences \u00e0 domicile<br>\ud83d\udcc5 Guide symptomes par partie du corps<br>\ud83d\udc8a Diab\u00e8te, HTA, Dr\u00e9panocytose<br>\ud83e\uddb7 Sant\u00e9 dentaire, mentale, peau<br><br>+ 20 plantes m\u00e9dicinales africaines + Fiche Urgence \u00e0 imprimer."},
+    {k:["plante","naturel","africain","gingembre","neem","aloe","moringa","remede"],
+     r:"Le guide inclut <b>20 plantes m\u00e9dicinales africaines</b> avec leurs noms locaux (Wolof, Dioula, Haoussa), usage principal et pr\u00e9paration.<br><br>Gingembre, Neem, Aloe vera, Moringa, Ail, Feuilles de papayer, Bissap, Cumin noir, Goyave, Kalanchoe et plus \u2014 disponibles dans tous les march\u00e9s africains."},
+    {k:["fiche","urgence","imprimer","afficher","poster"],
+     r:"La <b>Fiche d\u2019Urgence</b> est incluse dans l\u2019offre. C\u2019est un PDF 1 page con\u00e7u pour \u00eatre imprim\u00e9 et affich\u00e9 dans la maison.<br><br>Elle couvre 6 situations : fi\u00e8vre, diarrhee, plaie, br\u00fblure, etouffement, convulsion \u2014 avec les gestes qui sauvent pour chacune.<br><br><a href='"+SL+"' class='ai-cta pre'>\ud83d\udc8a Commander \u2014 5 000 FCFA</a>"},
+    {k:["medecin","remplace","hopital","urgence","grave","danger"],
+     r:"Le guide ne remplace pas le m\u00e9decin \u2014 et il le dit clairement d\u00e8s la premi\u00e8re page.<br><br>Ce qu\u2019il fait : t\u2019aider \u00e0 agir correctement dans les premi\u00e8res heures, reconna\u00eetre ce qui est grave, et savoir quand partir \u00e0 l\u2019h\u00f4pital. Il te donne aussi les signes d\u2019alarme pr\u00e9cis pour chaque situation."},
+    {k:["diabete","hypertension","drepanocytose","chronique","tension","diabetique"],
+     r:"Le guide inclut un module complet sur les 3 maladies chroniques les plus r\u00e9pandues en Afrique :<br><br>\ud83d\udc8a <b>Diab\u00e8te</b> \u2014 signes, aliments africains b\u00e9n\u00e9fiques, urgences<br>\u2764\ufe0f <b>Hypertension</b> \u2014 bissap, ail, chiffres de r\u00e9f\u00e9rence, crises<br>\ud83d\udd34 <b>Dr\u00e9panocytose</b> \u2014 d\u00e9clencheurs, hydratation, urgences"},
+    {k:["pays","senegal","cote d'ivoire","mali","burkina","cameroun","guinee","afrique","langue"],
+     r:"Le guide est adapt\u00e9 \u00e0 <b>toute l\u2019Afrique francophone</b> \ud83c\udf0d<br><br>Les plantes ont leurs noms locaux en Wolof, Dioula, Haoussa. Les exemples viennent du S\u00e9n\u00e9gal, C\u00f4te d\u2019Ivoire, Cameroun, Guin\u00e9e et Burkina Faso."},
+    {k:["bonjour","salut","hello","bonsoir","coucou","hi"],
+     r:"Bonjour ! \ud83d\ude0a Je suis l\u2019assistant du guide <b>\u00abMa Sant\u00e9 entre mes Mains\u00bb</b>.<br><br>Je r\u00e9ponds \u00e0 toutes tes questions sur le contenu, les pl antes ou le paiement. Par quoi tu veux commencer ?"},
+    {k:["merci","super","parfait","genial","cool","ok merci"],
+     r:"Avec plaisir ! \ud83d\ude0a Si tu es pr\u00eat, tu peux commander ici :<br><br><a href='"+SL+"' class='ai-cta pre'>\ud83d\udc8a Je protege ma famille \u2014 5 000 FCFA</a>"},
+    {k:["fievre","paludisme","enfant","bebe","nourrisson","malade"],
+     r:"Le Module 2 du guide est enti\u00e8rement d\u00e9di\u00e9 \u00e0 la fi\u00e8vre avec un tableau de s\u00e9v\u00e9rit\u00e9 color\u00e9, les gestes \u00e0 faire, les rem\u00e8des naturels et les 8 signes qui imposent l\u2019h\u00f4pital imm\u00e9diatement.<br><br>Il y a aussi une section compl\u00e8te sur le nourrisson avec les 6 signaux d\u2019urgence absolue."},
+    {k:["hesiter","pas sur","reflechir","douter","je sais pas","convaincu"],
+     r:"Je comprends \ud83d\ude0a Voil\u00e0 3 faits simples :<br><br>\u2705 Une offre compl\u00e8te tout inclus \u00e0 5 000 FCFA<br>\u2705 R\u00e9serv\u00e9e aux 30 premiers \u2014 elle ne durera pas<br>\u2705 Garantie 7 jours satisfait ou rembours\u00e9<br><br>Le risque est vraiment z\u00e9ro.<br><br><a href='"+SL+"' class='ai-cta pre'>\ud83d\udc8a Commander \u2014 5 000 FCFA</a>"},
+    {k:["duree","lire","long","temps","combien de temps"],
+     r:"Le guide fait <b>35 pages bien structur\u00e9es</b>. Tu peux le lire en <b>3 \u00e0 4 heures</b>.<br><br>Mais il est surtout con\u00e7u pour \u00eatre <b>consult\u00e9 rapidement</b> en cas de besoin \u2014 chaque module est ind\u00e9pendant, les tableaux sont lisibles en 30 secondes."},
+  ];
+
+  var FALLBACK="Je n\u2019ai pas la r\u00e9ponse exacte \u00e0 \u00e7a \ud83d\ude0a Mais le guide couvre vraiment les situations de sant\u00e9 les plus courantes en Afrique.<br><br><a href='"+SL+"' class='ai-cta pre'>\ud83d\udc8a Je protege ma famille \u2014 5 000 FCFA</a>";
+  var GREET="Bonjour ! \ud83d\udc4b Je suis l\u2019assistant du guide <b>\u00abMa Sant\u00e9 entre mes Mains\u00bb</b>.<br><br>Je r\u00e9ponds \u00e0 toutes tes questions \u2014 contenu, plantes m\u00e9dicinales, ou paiement. Par quoi tu commences ?";
+
+  function getReply(txt){
+    var low=norm(txt);
+    for(var i=0;i<KB.length;i++)
+      for(var j=0;j<KB[i].k.length;j++)
+        if(low.indexOf(norm(KB[i].k[j]))!==-1) return KB[i].r;
+    return FALLBACK;
+  }
+
+  var isOpen=false,init=false;
+  window.toggleAI=function(){
+    isOpen=!isOpen;
+    var win=document.getElementById("ai-win");
+    var lbl=document.getElementById("ai-lbl");
+    if(isOpen){win.classList.add("open");if(lbl)lbl.style.display="none";
+      if(!init){init=true;setTimeout(function(){showTy();setTimeout(function(){removeTy();addBot(GREET);},900);},400);}}
+    else{win.classList.remove("open");}
+  };
+  function addBot(html){
+    var msgs=document.getElementById("ai-msgs");
+    var d=document.createElement("div");d.className="ai-msg bot";
+    d.innerHTML="<div class=\"ai-mav bot\">\ud83d\udc8a</div><div class=\"ai-bub\">"+html+"</div>";
+    msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;
+  }
+  function addUser(txt){
+    var msgs=document.getElementById("ai-msgs");
+    var d=document.createElement("div");d.className="ai-msg user";
+    d.innerHTML="<div class=\"ai-bub\">"+txt+"</div><div class=\"ai-mav usr\">\ud83d\udc64</div>";
+    msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;
+  }
+  function showTy(){
+    var msgs=document.getElementById("ai-msgs");
+    var d=document.createElement("div");d.className="ai-msg bot";d.id="ai-ty";
+    d.innerHTML="<div class=\"ai-mav bot\">\ud83d\udc8a</div><div class=\"ai-ty\"><span></span><span></span><span></span></div>";
+    msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;
+  }
+  function removeTy(){var t=document.getElementById("ai-ty");if(t)t.remove();}
+  window.aiSendMsg=function(){
+    var inp=document.getElementById("ai-inp");var txt=inp.value.trim();if(!txt)return;
+    inp.value="";inp.style.height="auto";
+    var sugg=document.getElementById("ai-sugg");if(sugg)sugg.style.display="none";
+    addUser(txt);showTy();
+    setTimeout(function(){removeTy();addBot(getReply(txt));},700+Math.random()*500);
+  };
+  window.aiSend=function(txt){document.getElementById("ai-inp").value=txt;window.aiSendMsg();};
+  document.addEventListener("DOMContentLoaded",function(){
+    var inp=document.getElementById("ai-inp");if(!inp)return;
+    inp.addEventListener("keydown",function(e){if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();window.aiSendMsg();}});
+    inp.addEventListener("input",function(){this.style.height="auto";this.style.height=Math.min(this.scrollHeight,72)+"px";});
+  });
+})();
+</script>
+
+<!-- SOCIAL PROOF POPUP -->
+<style>
+#sp-popup{position:fixed;bottom:90px;left:24px;z-index:9999;max-width:320px;min-width:280px;
+  background:#fff;border-radius:16px;
+  box-shadow:0 8px 40px rgba(0,0,0,.14),0 2px 8px rgba(0,0,0,.08);
+  display:flex;align-items:center;gap:12px;padding:14px 16px;
+  border-left:4px solid #1A6B9A;transform:translateX(-120%);opacity:0;
+  transition:transform .45s cubic-bezier(.34,1.56,.64,1),opacity .35s ease;
+  font-family:'Plus Jakarta Sans',sans-serif;pointer-events:none;}
+#sp-popup.sp-v{transform:translateX(0);opacity:1;pointer-events:auto;}
+#sp-popup.sp-h{transform:translateX(-120%);opacity:0;
+  transition:transform .35s ease-in,opacity .28s ease-in;}
+.sp-av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:15px;font-weight:800;color:#fff;
+  flex-shrink:0;position:relative;}
+.sp-af{position:absolute;bottom:-2px;right:-2px;font-size:13px;background:#fff;
+  border-radius:50%;width:17px;height:17px;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.15);}
+.sp-c{flex:1;min-width:0;}
+.sp-n{font-size:13px;font-weight:800;color:#0F1A2E;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;margin-bottom:2px;}
+.sp-a{font-size:12px;color:#444;line-height:1.4;}
+.sp-pre{font-weight:700;color:#7B5800;background:#FEF3DC;padding:1px 6px;border-radius:4px;font-size:11px;}
+.sp-t{font-size:11px;color:#999;margin-top:3px;display:flex;align-items:center;gap:4px;}
+.sp-t::before{content:'';width:6px;height:6px;border-radius:50%;background:#2ecc71;
+  display:inline-block;animation:sp-p 1.8s infinite;}
+@keyframes sp-p{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.3)}}
+.sp-bg{position:absolute;top:-8px;right:-8px;background:#C0392B;color:#fff;
+  font-size:9px;font-weight:800;padding:2px 7px;border-radius:8px;
+  letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;}
+.sp-x{position:absolute;top:8px;right:10px;background:none;border:none;
+  color:#ccc;font-size:14px;cursor:pointer;line-height:1;padding:2px;transition:color .2s;}
+.sp-x:hover{color:#999;}
+.sp-prog{position:absolute;bottom:0;left:0;height:3px;
+  background:linear-gradient(90deg,#1A6B9A,#2E8EC0);border-radius:0 0 0 16px;
+  width:100%;transform-origin:left;animation:sp-pg 10s linear;}
+@keyframes sp-pg{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+@media(max-width:640px){
+  #sp-popup{bottom:90px;left:12px;max-width:260px;min-width:unset;padding:10px 12px;gap:9px;}
+  #sp-popup .sp-av{width:34px;height:34px;font-size:12px;}
+  #sp-popup .sp-n{font-size:12px;}
+  #sp-popup .sp-a{font-size:11px;}
+}
+</style>
+<div id="sp-popup" role="alert" aria-live="polite">
+  <div class="sp-av" id="sp-av">AS</div>
+  <div class="sp-c">
+    <div class="sp-n" id="sp-nm">Awa Seck</div>
+    <div class="sp-a" id="sp-ac">a achet&#233; le <span class="sp-pre">Guide Complet</span></div>
+    <div class="sp-t" id="sp-tm">il y a 4 minutes</div>
+  </div>
+  <div class="sp-bg">Achat v&#233;rifi&#233;</div>
+  <button class="sp-x" onclick="spClose()" aria-label="Fermer">&#10005;</button>
+  <div class="sp-prog" id="sp-pg"></div>
+</div>
+<script>
+(function(){
+  var proofs=[
+    {name:"Awa Seck",         flag:"\uD83C\uDDF8\uD83C\uDDF3",ini:"AS",time:"4 minutes"},
+    {name:"Kofi Mensah",      flag:"\uD83C\uDDE8\uD83C\uDDEE",ini:"KM",time:"9 minutes"},
+    {name:"Fatoumata Barry",  flag:"\uD83C\uDDEC\uD83C\uDDF3",ini:"FB",time:"13 minutes"},
+    {name:"Ousmane Diallo",   flag:"\uD83C\uDDF8\uD83C\uDDF3",ini:"OD",time:"18 minutes"},
+    {name:"Adjoua Kouassi",   flag:"\uD83C\uDDE8\uD83C\uDDEE",ini:"AK",time:"23 minutes"},
+    {name:"Mariama Traore",   flag:"\uD83C\uDDF2\uD83C\uDDF1",ini:"MT",time:"28 minutes"},
+    {name:"Ibrahim Sow",      flag:"\uD83C\uDDF8\uD83C\uDDF3",ini:"IS",time:"34 minutes"},
+    {name:"Bintou Camara",    flag:"\uD83C\uDDEC\uD83C\uDDF3",ini:"BC",time:"39 minutes"},
+    {name:"Seydou Ouedraogo", flag:"\uD83C\uDDE7\uD83C\uDDEB",ini:"SO",time:"44 minutes"},
+    {name:"Nafi Coulibaly",   flag:"\uD83C\uDDF2\uD83C\uDDF1",ini:"NC",time:"50 minutes"},
+    {name:"Aminata Diop",     flag:"\uD83C\uDDF8\uD83C\uDDF3",ini:"AD",time:"55 minutes"},
+    {name:"Koffi Assieman",   flag:"\uD83C\uDDE8\uD83C\uDDEE",ini:"KA",time:"1 heure"},
+    {name:"Rokiatou Bah",     flag:"\uD83C\uDDEC\uD83C\uDDF3",ini:"RB",time:"1h 05 min"},
+    {name:"Cheikh Ndoye",     flag:"\uD83C\uDDF8\uD83C\uDDF3",ini:"CN",time:"1h 12 min"},
+    {name:"Issa Sawadogo",    flag:"\uD83C\uDDE7\uD83C\uDDEB",ini:"IS",time:"1h 20 min"},
+  ];
+  var avColors=["1A6B9A","1A7A4A","C0392B","7D3C98","D4900A","E67E22","2471A3"];
+  var idx=0,closed=false,timer=null,sw=null;
+  function show(i){
+    if(closed)return;
+    var p=proofs[i%proofs.length];
+    var pop=document.getElementById("sp-popup");
+    var av=document.getElementById("sp-av");
+    av.textContent=p.ini;
+    av.style.background="#"+avColors[i%avColors.length];
+    var fl=av.querySelector(".sp-af");
+    if(!fl){fl=document.createElement("span");fl.className="sp-af";av.appendChild(fl);}
+    fl.textContent=p.flag;
+    document.getElementById("sp-nm").textContent=p.name;
+    document.getElementById("sp-ac").innerHTML="a achet\u00e9 le <span class=\"sp-pre\">Guide Complet</span>";
+    document.getElementById("sp-tm").textContent="il y a "+p.time;
+    var pg=document.getElementById("sp-pg");
+    pg.style.animation="none";pg.offsetHeight;pg.style.animation="sp-pg 10s linear";
+    pop.classList.remove("sp-h");pop.classList.add("sp-v");
+  }
+  function cycle(){
+    if(closed)return;
+    var pop=document.getElementById("sp-popup");
+    pop.classList.add("sp-h");pop.classList.remove("sp-v");
+    sw=setTimeout(function(){if(closed)return;idx=(idx+1)%proofs.length;show(idx);},600);
+  }
+  window.spClose=function(){
+    closed=true;clearInterval(timer);clearTimeout(sw);
+    var pop=document.getElementById("sp-popup");
+    pop.classList.add("sp-h");pop.classList.remove("sp-v");
+  };
+  setTimeout(function(){idx=Math.floor(Math.random()*proofs.length);show(idx);timer=setInterval(cycle,10000);},3000);
+})();
+</script>
+
+<!-- ASSISTANT IA -->
+<style>
+#ai-fab{position:fixed;bottom:90px;right:24px;width:56px;height:56px;
+  background:linear-gradient(135deg,#1A6B9A,#2E8EC0);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  box-shadow:0 8px 28px rgba(26,107,154,.45);z-index:1000;border:none;
+  transition:transform .2s;animation:ai-p 2.5s 4s ease infinite;}
+@keyframes ai-p{0%,100%{box-shadow:0 8px 28px rgba(26,107,154,.45)}50%{box-shadow:0 8px 44px rgba(26,107,154,.7)}}
+#ai-fab:hover{transform:scale(1.1);}
+#ai-fab svg{width:26px;height:26px;fill:#fff;}
+#ai-lbl{position:fixed;bottom:154px;right:24px;background:#1A6B9A;color:#fff;
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;
+  padding:6px 13px;border-radius:20px;z-index:1000;white-space:nowrap;
+  box-shadow:0 4px 14px rgba(0,0,0,.15);pointer-events:none;
+  animation:fadeInL .5s 4.5s both;}
+@keyframes fadeInL{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+#ai-lbl::after{content:"";position:absolute;bottom:-6px;right:18px;
+  border:6px solid transparent;border-top-color:#1A6B9A;border-bottom:none;}
+#ai-win{position:fixed;bottom:90px;right:24px;width:352px;max-height:555px;
+  background:#fff;border-radius:20px;box-shadow:0 24px 72px rgba(0,0,0,.18);
+  z-index:1001;display:none;flex-direction:column;overflow:hidden;
+  border:1px solid #E5EDF5;font-family:'Plus Jakarta Sans',sans-serif;}
+#ai-win.open{display:flex;animation:slideUp .3s ease;}
+@keyframes slideUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.ai-hdr{background:linear-gradient(135deg,#1A6B9A,#2E8EC0);padding:13px 17px;
+  display:flex;align-items:center;gap:11px;flex-shrink:0;}
+.ai-hav{width:37px;height:37px;background:rgba(255,255,255,.18);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.ai-hn{color:#fff;font-weight:800;font-size:13.5px;}
+.ai-hs{color:rgba(255,255,255,.7);font-size:11px;display:flex;align-items:center;gap:3px;margin-top:2px;}
+.ai-dot{width:6px;height:6px;background:#2ecc71;border-radius:50%;}
+.ai-xb{background:rgba(255,255,255,.14);border:none;cursor:pointer;color:#fff;
+  font-size:15px;width:28px;height:28px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;transition:background .2s;margin-left:auto;}
+.ai-xb:hover{background:rgba(255,255,255,.26);}
+.ai-msgs{flex:1;overflow-y:auto;padding:13px;display:flex;flex-direction:column;
+  gap:11px;background:#F5F8FA;}
+.ai-msg{display:flex;gap:7px;align-items:flex-end;animation:mIn .3s ease;}
+@keyframes mIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.ai-msg.user{flex-direction:row-reverse;}
+.ai-mav{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:12px;flex-shrink:0;font-weight:700;}
+.ai-mav.bot{background:#1A6B9A;color:#fff;}
+.ai-mav.usr{background:#D4900A;color:#0F1A2E;}
+.ai-bub{max-width:82%;padding:9px 13px;border-radius:14px;font-size:13px;line-height:1.65;color:#222;}
+.ai-msg.bot .ai-bub{background:#fff;border:1px solid #E5EDF5;
+  border-bottom-left-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.04);}
+.ai-msg.user .ai-bub{background:#1A6B9A;color:#fff;border-bottom-right-radius:4px;}
+.ai-sugg{padding:7px 13px;display:flex;flex-wrap:wrap;gap:5px;
+  background:#F5F8FA;border-top:1px solid #E5EDF5;flex-shrink:0;}
+.ai-sb{background:#fff;border:1.5px solid #1A6B9A;color:#1A6B9A;
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;
+  padding:4px 11px;border-radius:100px;cursor:pointer;transition:all .2s;white-space:nowrap;}
+.ai-sb:hover{background:#1A6B9A;color:#fff;}
+.ai-inp-a{padding:10px 13px;display:flex;gap:7px;background:#fff;
+  border-top:1px solid #E5EDF5;flex-shrink:0;align-items:center;}
+.ai-inp{flex:1;border:1.5px solid #E5EDF5;border-radius:22px;padding:8px 13px;
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;outline:none;
+  transition:border-color .2s;resize:none;max-height:72px;overflow-y:auto;line-height:1.4;}
+.ai-inp:focus{border-color:#1A6B9A;}
+.ai-send{width:35px;height:35px;background:linear-gradient(135deg,#1A6B9A,#2E8EC0);
+  border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;flex-shrink:0;transition:transform .2s;}
+.ai-send:hover{transform:scale(1.1);}
+.ai-send svg{width:14px;height:14px;fill:#fff;}
+.ai-ty{display:flex;gap:4px;align-items:center;padding:9px 12px;background:#fff;
+  border:1px solid #E5EDF5;border-radius:14px;border-bottom-left-radius:4px;width:fit-content;}
+.ai-ty span{width:6px;height:6px;background:#1A6B9A;border-radius:50%;
+  animation:ty 1.2s infinite;opacity:.4;}
+.ai-ty span:nth-child(2){animation-delay:.2s;}
+.ai-ty span:nth-child(3){animation-delay:.4s;}
+@keyframes ty{0%,100%{opacity:.4;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
+.ai-cta{display:inline-block;padding:6px 13px;border-radius:7px;font-weight:800;
+  font-size:12px;text-decoration:none;margin-top:7px;margin-right:5px;transition:transform .2s;cursor:pointer;}
+.ai-cta:hover{transform:translateY(-2px);}
+.ai-cta.pre{background:linear-gradient(135deg,#D4900A,#F0B429);color:#0F1A2E;}
+@media(max-width:640px){
+  #ai-win{width:calc(100vw - 28px);right:14px;bottom:80px;}
+  #ai-fab{bottom:80px;right:16px;}
+  #ai-lbl{bottom:146px;right:16px;}
+}
+</style>
+<div id="ai-lbl">&#128138; Une question ?</div>
+<button id="ai-fab" onclick="toggleAI()" aria-label="Assistant">
+  <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+</button>
+<div id="ai-win">
+  <div class="ai-hdr">
+    <div class="ai-hav">&#128138;</div>
+    <div style="flex:1;">
+      <div class="ai-hn">Assistant Sante Learn &amp; Earn</div>
+      <div class="ai-hs"><div class="ai-dot"></div>En ligne</div>
+    </div>
+    <button class="ai-xb" onclick="toggleAI()">&#10005;</button>
+  </div>
+  <div class="ai-msgs" id="ai-msgs"></div>
+  <div class="ai-sugg" id="ai-sugg">
+    <button class="ai-sb" onclick="aiSend(this.textContent)">Contenu du guide ?</button>
+    <button class="ai-sb" onclick="aiSend(this.textContent)">Comment payer ?</button>
+    <button class="ai-sb" onclick="aiSend(this.textContent)">Comment l&#39;obtenir ?</button>
+    <button class="ai-sb" onclick="aiSend(this.textContent)">Garanti ?</button>
+  </div>
+  <div class="ai-inp-a">
+    <textarea class="ai-inp" id="ai-inp" placeholder="Pose ta question..." rows="1"></textarea>
+    <button class="ai-send" onclick="aiSendMsg()"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+  </div>
+</div>
+
+</body>
